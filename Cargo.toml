@@ -1,0 +1,27 @@
+[package]
+name = "rust-dl"
+version = "0.0.0"
+edition = "2024"
+authors = ["Nicholas Raynes"]
+description = "A tool that lets you easily download items from the internet in code."
+license  = "MIT OR Apache-2.0"
+repository = "https://github.com/nraynes/rust-dl"
+keywords = ["rust", "downloader", "dl", "project", "tools"]
+categories = ["development-tools"]
+include = [
+    "src/",
+    "examples/",
+    "Cargo.toml",
+    "LICENSES/",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+]
+
+[dependencies]
+reqwest = { version = "0.13.3", features = ["blocking"] }
+rust-alert = "0.3.0"
+url = "2.5.8"
+
+[dev-dependencies]
+assert_fs = "1.1.3"
